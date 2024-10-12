@@ -1,0 +1,137 @@
+:root{
+    --main-bg-color:rgb(247, 247, 247);
+    --main-icon-bg-color :rgb(244, 244, 244);
+    --main-text-color : rgb(116, 129, 130);
+    --main-font:"Montserrat", sans-serif;
+    --third-font:"Montserrat Subrayada", sans-serif;
+    --second-font:"Poppins", sans-serif;
+    --main-duration: .5s;
+    --gray-bg:#f7f7f7; 
+}
+.status-color{
+    color: #149AD8;
+}
+
+.main-bg{
+    background-color: #323544;
+}
+.second-bg{
+    background-color: #262936;
+}
+.text-main{
+    color: #262936;
+}
+.w-fit{
+    width: fit-content;
+}
+
+.top-25{
+    top: 25%;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav .nav-link.active{
+    color: #009AD3;
+    border: 2px solid #009AD3;
+    /* padding: 5px 25px; */
+}
+
+.navbar-nav .nav-link{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 5px 25px;
+    transition: color .15s , border .15s;
+
+}
+.nav-link:hover{
+      color: #009AD3;
+      border : 2px solid #009AD3
+    /* padding: 5px 25px; */
+}
+
+/* .navbar-nav .nav-link:hover{
+  
+} */
+
+
+section .container-fluid{
+    background-image: url(../images/banner.png);
+    height: 300px;
+}
+
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control, .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select, .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+    /* border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    border-radius: 30px;
+    padding: 20px;
+}
+
+input-group{
+    left: 100px;
+    /* transform: translate(-50%); */
+    
+}
+
+.input-group>.form-control{
+    height: 50px;
+    color: #262936 !important;
+}
+
+.submit{
+    width: 100px;
+    height: calc(50px - 10px) !important;
+    border: 0;
+    border-radius: 30px !important;
+    padding: 5px 10px;
+    background: #009AD8;
+    color: white !important;
+    top: 50%;
+    left: calc(100% - 55px);
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+
+.temp{
+    background-color: #1E202B;
+}
+.temp .container .row{
+    margin-top: -80px;
+}
+
+.card{
+transition: transform .15s;
+cursor: pointer;
+color: #898B90;
+}
+
+
+.card .header {
+background-color: #2D303D;}
+
+.card .header p{
+margin: 0;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.first-icon{
+    width: 90px;
+    height: 90px;
+}
+
+@media screen and (min-width:992px) {
+    .card:hover{
+        transform: scale(1.1);
+        z-index: 5;
+        }
+}
